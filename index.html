@@ -2,100 +2,136 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Right Recovery – Style Options</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Right Recovery | 24/7 Car Recovery &amp; Breakdown</title>
+<meta name="description" content="24/7 car recovery and breakdown assistance. Call now for fast, fully insured vehicle recovery.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:,">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,sans-serif;background:#fff}
-.picker{position:sticky;top:0;z-index:10;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:10px 16px;background:#222;color:#fff}
-.picker span{align-self:center;font-size:14px;opacity:.8}
-.picker button{padding:8px 14px;border:0;border-radius:6px;cursor:pointer;font-weight:600}
-.picker button.on{background:#ffcc00}
-.site{display:none}.site.on{display:block}
-section{padding:56px 16px}.wrap{max-width:1000px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:16px;max-width:1000px;margin:auto;flex-wrap:wrap;gap:8px}
-nav .links{display:flex;gap:16px;font-size:15px}
-h1{font-size:clamp(32px,6vw,56px);line-height:1.1}
-.btn{display:inline-block;padding:14px 24px;margin:20px 8px 0 0;text-decoration:none;font-weight:700}
-
-/* A: Bold & Urgent */
-#a{background:#111;color:#fff}
-#a nav b{color:#ffcc00;font-size:22px}
-#a .hero{background:linear-gradient(135deg,#111 60%,#ffcc00 60%);padding:90px 16px}
-#a h1 span{color:#ffcc00}
-#a .btn{background:#ffcc00;color:#111;border-radius:4px}
-#a .btn.alt{background:transparent;color:#fff;border:2px solid #fff}
-#a .card{background:#1d1d1d;border-left:5px solid #ffcc00;padding:20px}
-#a .bar{background:#ffcc00;color:#111;text-align:center;font-weight:800;padding:14px;font-size:20px}
-
-/* B: Clean & Professional */
-#b{background:#f6f8fb;color:#1b2a41}
-#b nav{background:#fff}#b nav b{color:#1f5fbf;font-size:22px}
-#b .hero{background:#fff;text-align:center}
-#b h1{color:#1b2a41}#b p.lead{color:#5a6b82;margin-top:14px;font-size:18px}
-#b .btn{background:#1f5fbf;color:#fff;border-radius:999px}
-#b .btn.alt{background:#e8eefb;color:#1f5fbf}
-#b .card{background:#fff;border-radius:14px;padding:24px;box-shadow:0 4px 18px #0001}
-#b .card i{font-style:normal;font-size:28px}
-
-/* C: Friendly & Local */
-#c{background:#fff8ef;color:#3a2a1a;font-family:Georgia,serif}
-#c nav b{color:#2e7d4f;font-size:24px}
-#c .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center}
-#c .pic{background:#2e7d4f;color:#fff;border-radius:24px;height:240px;display:grid;place-items:center;font-size:80px}
-#c .btn{background:#e8772e;color:#fff;border-radius:12px}
-#c .card{background:#fff;border:2px dashed #e8c9a0;border-radius:16px;padding:20px}
-#c blockquote{font-style:italic;font-size:20px;text-align:center}
+:root{--y:#ffcc00;--k:#111;--g:#f6f7f9;--t:#1b1b1b;--m:#5d6470}
+body{font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--t);background:#fff;padding-bottom:72px}
+a{color:inherit}
+.w{max-width:1000px;margin:auto;padding:0 16px}
+.top{background:var(--y);color:var(--k);text-align:center;font-weight:800;padding:8px 16px}
+.top a{text-decoration:none}
+header{background:var(--k);color:#fff}
+header .w{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;gap:12px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:21px;letter-spacing:.5px;text-decoration:none}
+.logo span{color:var(--y)}
+nav a{color:#ddd;text-decoration:none;margin-left:16px;font-size:15px}
+.hero{background:var(--k);color:#fff;padding:48px 0 56px}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.1}
+h1 span{color:var(--y)}
+.lead{color:#cfd3da;margin-top:14px;font-size:18px;max-width:560px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 24px;border-radius:999px;font-weight:800;text-decoration:none;font-size:17px;border:0;cursor:pointer}
+.by{background:var(--y);color:var(--k)}
+.bo{background:transparent;color:#fff;border:2px solid #fff}
+.bd{background:var(--k);color:#fff}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.ticks{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;color:#cfd3da;font-size:15px;list-style:none}
+.ticks li:before{content:"✓ ";color:var(--y);font-weight:900}
+section{padding:56px 0}
+h2{font-size:clamp(24px,4vw,34px);margin-bottom:8px}
+.sub{color:var(--m);margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border-radius:14px;padding:22px;box-shadow:0 2px 14px #0000000f;border-top:4px solid var(--y)}
+.card h3{margin-bottom:6px}
+.card p{color:var(--m)}
+.gray{background:var(--g)}
+.steps{counter-reset:s;list-style:none}
+.steps li{counter-increment:s;padding-left:52px;position:relative;margin-bottom:18px}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--y);font-weight:900;display:grid;place-items:center}
+.help{background:var(--k);color:#fff;border-radius:16px;padding:28px}
+.help p{color:#cfd3da}
+#locout{margin-top:12px;font-size:15px;color:var(--y)}
+.safety{border-left:4px solid var(--y);padding:12px 16px;background:#fffbea;margin-top:20px;border-radius:0 8px 8px 0}
+footer{background:var(--k);color:#aaa;padding:28px 0;font-size:14px}
+footer a{color:#fff}
+.dock{position:fixed;left:0;right:0;bottom:0;display:flex;gap:8px;padding:10px;background:#111e;z-index:9}
+.dock a{flex:1;min-height:52px}
+@media(min-width:800px){.dock{display:none}body{padding-bottom:0}}
+@media(max-width:600px){nav{display:none}}
 </style>
 </head>
 <body>
-<div class="picker"><span>Pick a style:</span>
-<button class="on" data-s="a">A · Bold & Urgent</button>
-<button data-s="b">B · Clean & Professional</button>
-<button data-s="c">C · Friendly & Local</button></div>
 
-<div class="site on" id="a">
-<div class="bar">🚨 24/7 BREAKDOWN? CALL 0000 000 000</div>
-<nav><b>RIGHT RECOVERY</b><div class="links"><span>Services</span><span>Areas</span><span>Contact</span></div></nav>
-<section class="hero"><div class="wrap"><h1>BROKEN DOWN?<br><span>WE'RE ON OUR WAY.</span></h1>
-<p style="margin-top:14px;max-width:480px">Fast car recovery, any time, day or night. Average arrival under 45 minutes.</p>
-<a class="btn" href="#">📞 CALL NOW</a><a class="btn alt" href="#">Get a Quote</a></div></section>
-<section><div class="wrap"><h2>WHAT WE DO</h2><div class="grid">
-<div class="card"><h3>Roadside Recovery</h3><p>Broken down anywhere, we'll get you moving.</p></div>
+<div class="top">🚨 Broken down? We're open 24/7. <a href="tel:+440000000000">Call 0000 000 000</a></div>
+
+<header><div class="w">
+<a class="logo" href="#">RIGHT <span>RECOVERY</span></a>
+<nav><a href="#services">Services</a><a href="#how">How it works</a><a href="#help">Help now</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="w">
+<h1>Broken down?<br><span>We're on our way.</span></h1>
+<p class="lead">Fast, fully insured car recovery any time, day or night. Professional drivers and clear prices.</p>
+<div class="acts">
+<a class="btn by" href="tel:+440000000000">📞 Call now</a>
+<a class="btn bo" href="sms:+440000000000?body=I%20need%20recovery.%20My%20location%3A%20">💬 Text us</a>
+</div>
+<ul class="ticks"><li>24/7, 365 days</li><li>Fully insured</li><li>No hidden fees</li><li>All vehicles</li></ul>
+</div></div>
+
+<section id="services"><div class="w">
+<h2>Our services</h2>
+<p class="sub">Whatever happened, we can help.</p>
+<div class="grid">
+<div class="card"><h3>Breakdown Recovery</h3><p>Taken to a garage, home or anywhere you choose.</p></div>
 <div class="card"><h3>Accident Recovery</h3><p>Safe, careful removal after a collision.</p></div>
-<div class="card"><h3>Vehicle Transport</h3><p>Local and long-distance car moves.</p></div>
-<div class="card"><h3>Jump Starts</h3><p>Flat battery? Sorted on the spot.</p></div></div></div></section>
+<div class="card"><h3>Roadside Assistance</h3><p>Jump starts, flat tyres and quick fixes on the spot.</p></div>
+<div class="card"><h3>Vehicle Transport</h3><p>Local and long-distance car moves, dealer and auction work.</p></div>
 </div>
+</div></section>
 
-<div class="site" id="b">
-<nav><b>Right Recovery</b><div class="links"><span>Services</span><span>Pricing</span><span>About</span><span>Contact</span></div></nav>
-<section class="hero"><div class="wrap"><h1>Reliable vehicle recovery,<br>when you need it.</h1>
-<p class="lead">Fully insured, professional drivers. Clear pricing with no hidden fees.</p>
-<a class="btn" href="#">Request Recovery</a><a class="btn alt" href="#">See Pricing</a></div></section>
-<section><div class="wrap"><h2 style="text-align:center">Our Services</h2><div class="grid">
-<div class="card"><i>🚗</i><h3>Breakdown Recovery</h3><p>Taken to a garage or home.</p></div>
-<div class="card"><i>🛠️</i><h3>Roadside Assistance</h3><p>Quick fixes to get you going.</p></div>
-<div class="card"><i>🚚</i><h3>Car Transport</h3><p>Moving cars safely nationwide.</p></div>
-<div class="card"><i>🏁</i><h3>Auction & Dealer</h3><p>Trade collections and deliveries.</p></div></div></div></section>
+<section id="how" class="gray"><div class="w">
+<h2>How it works</h2>
+<p class="sub">Three simple steps.</p>
+<ol class="steps">
+<li><b>Call or text us.</b> Tell us where you are and what's wrong.</li>
+<li><b>Get a price.</b> A clear quote up front, with no surprises.</li>
+<li><b>We come to you.</b> A driver is sent straight away and keeps you updated.</li>
+</ol>
+</div></section>
+
+<section id="help"><div class="w">
+<div class="help">
+<h2>Need help right now?</h2>
+<p>Bad signal? A text often gets through when a call won't. Tap below to put your GPS location into a text message to us.</p>
+<div class="acts">
+<a class="btn by" href="tel:+440000000000">📞 Call 0000 000 000</a>
+<button class="btn bo" id="loc" type="button">📍 Text my location</button>
 </div>
+<p id="locout" aria-live="polite"></p>
+</div>
+<div class="safety"><b>Stay safe while you wait:</b> put your hazard lights on, get out of the vehicle on the side away from traffic, and wait behind a barrier if you can. On a motorway, use an emergency phone if there's one nearby.</div>
+</div></section>
+</main>
 
-<div class="site" id="c">
-<nav><b>🚛 Right Recovery</b><div class="links"><span>Help</span><span>Reviews</span><span>Call us</span></div></nav>
-<section><div class="wrap hero"><div><h1>Stuck? Don't worry, we've got you.</h1>
-<p style="margin-top:14px;font-size:18px">A friendly, family-run recovery service looking after drivers in your area.</p>
-<a class="btn" href="#">Give us a ring</a></div><div class="pic">🚗</div></div></section>
-<section><div class="wrap"><div class="grid">
-<div class="card"><h3>Breakdowns</h3><p>We'll come to you and take you somewhere safe.</p></div>
-<div class="card"><h3>Moving a car</h3><p>Bought a car? We'll bring it home.</p></div>
-<div class="card"><h3>Scrap & Removal</h3><p>Old car going? We'll collect it.</p></div></div>
-<blockquote style="margin-top:40px">"Came out at 2am and were so kind. Couldn't recommend more!" ⭐⭐⭐⭐⭐</blockquote></div></section>
+<footer><div class="w">
+<p><b style="color:#fff">Right Recovery</b> · 24/7 Car Recovery · <a href="tel:+440000000000">0000 000 000</a></p>
+<p>© 2026 Right Recovery</p>
+</div></footer>
+
+<div class="dock">
+<a class="btn by" href="tel:+440000000000">📞 Call</a>
+<a class="btn bd" style="border:2px solid #fff" href="sms:+440000000000?body=I%20need%20recovery.%20My%20location%3A%20">💬 Text</a>
 </div>
 
 <script>
-document.querySelectorAll('.picker button').forEach(b=>b.onclick=()=>{
-document.querySelectorAll('.picker button,.site').forEach(e=>e.classList.remove('on'));
-b.classList.add('on');document.getElementById(b.dataset.s).classList.add('on');scrollTo(0,0)});
+var N='+440000000000',o=document.getElementById('locout');
+document.getElementById('loc').onclick=function(){
+function send(t){location.href='sms:'+N+'?body='+encodeURIComponent('I need recovery. '+t)}
+if(!navigator.geolocation){send('My location: ');return}
+o.textContent='Finding your location…';
+navigator.geolocation.getCurrentPosition(function(p){
+var c=p.coords.latitude.toFixed(5)+','+p.coords.longitude.toFixed(5);
+o.textContent='Location found: '+c;
+send('My location: https://maps.google.com/?q='+c)},
+function(){o.textContent='Could not get your location. Please type it in the text.';send('My location: ')},
+{enableHighAccuracy:true,timeout:10000,maximumAge:60000})};
+if('serviceWorker'in navigator)addEventListener('load',function(){navigator.serviceWorker.register('sw.js')});
 </script>
 </body>
 </html>
