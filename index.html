@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Right Recovery – Style Options</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#fff}
+.picker{position:sticky;top:0;z-index:10;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:10px 16px;background:#222;color:#fff}
+.picker span{align-self:center;font-size:14px;opacity:.8}
+.picker button{padding:8px 14px;border:0;border-radius:6px;cursor:pointer;font-weight:600}
+.picker button.on{background:#ffcc00}
+.site{display:none}.site.on{display:block}
+section{padding:56px 16px}.wrap{max-width:1000px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px;max-width:1000px;margin:auto;flex-wrap:wrap;gap:8px}
+nav .links{display:flex;gap:16px;font-size:15px}
+h1{font-size:clamp(32px,6vw,56px);line-height:1.1}
+.btn{display:inline-block;padding:14px 24px;margin:20px 8px 0 0;text-decoration:none;font-weight:700}
+
+/* A: Bold & Urgent */
+#a{background:#111;color:#fff}
+#a nav b{color:#ffcc00;font-size:22px}
+#a .hero{background:linear-gradient(135deg,#111 60%,#ffcc00 60%);padding:90px 16px}
+#a h1 span{color:#ffcc00}
+#a .btn{background:#ffcc00;color:#111;border-radius:4px}
+#a .btn.alt{background:transparent;color:#fff;border:2px solid #fff}
+#a .card{background:#1d1d1d;border-left:5px solid #ffcc00;padding:20px}
+#a .bar{background:#ffcc00;color:#111;text-align:center;font-weight:800;padding:14px;font-size:20px}
+
+/* B: Clean & Professional */
+#b{background:#f6f8fb;color:#1b2a41}
+#b nav{background:#fff}#b nav b{color:#1f5fbf;font-size:22px}
+#b .hero{background:#fff;text-align:center}
+#b h1{color:#1b2a41}#b p.lead{color:#5a6b82;margin-top:14px;font-size:18px}
+#b .btn{background:#1f5fbf;color:#fff;border-radius:999px}
+#b .btn.alt{background:#e8eefb;color:#1f5fbf}
+#b .card{background:#fff;border-radius:14px;padding:24px;box-shadow:0 4px 18px #0001}
+#b .card i{font-style:normal;font-size:28px}
+
+/* C: Friendly & Local */
+#c{background:#fff8ef;color:#3a2a1a;font-family:Georgia,serif}
+#c nav b{color:#2e7d4f;font-size:24px}
+#c .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center}
+#c .pic{background:#2e7d4f;color:#fff;border-radius:24px;height:240px;display:grid;place-items:center;font-size:80px}
+#c .btn{background:#e8772e;color:#fff;border-radius:12px}
+#c .card{background:#fff;border:2px dashed #e8c9a0;border-radius:16px;padding:20px}
+#c blockquote{font-style:italic;font-size:20px;text-align:center}
+</style>
+</head>
+<body>
+<div class="picker"><span>Pick a style:</span>
+<button class="on" data-s="a">A · Bold & Urgent</button>
+<button data-s="b">B · Clean & Professional</button>
+<button data-s="c">C · Friendly & Local</button></div>
+
+<div class="site on" id="a">
+<div class="bar">🚨 24/7 BREAKDOWN? CALL 0000 000 000</div>
+<nav><b>RIGHT RECOVERY</b><div class="links"><span>Services</span><span>Areas</span><span>Contact</span></div></nav>
+<section class="hero"><div class="wrap"><h1>BROKEN DOWN?<br><span>WE'RE ON OUR WAY.</span></h1>
+<p style="margin-top:14px;max-width:480px">Fast car recovery, any time, day or night. Average arrival under 45 minutes.</p>
+<a class="btn" href="#">📞 CALL NOW</a><a class="btn alt" href="#">Get a Quote</a></div></section>
+<section><div class="wrap"><h2>WHAT WE DO</h2><div class="grid">
+<div class="card"><h3>Roadside Recovery</h3><p>Broken down anywhere, we'll get you moving.</p></div>
+<div class="card"><h3>Accident Recovery</h3><p>Safe, careful removal after a collision.</p></div>
+<div class="card"><h3>Vehicle Transport</h3><p>Local and long-distance car moves.</p></div>
+<div class="card"><h3>Jump Starts</h3><p>Flat battery? Sorted on the spot.</p></div></div></div></section>
+</div>
+
+<div class="site" id="b">
+<nav><b>Right Recovery</b><div class="links"><span>Services</span><span>Pricing</span><span>About</span><span>Contact</span></div></nav>
+<section class="hero"><div class="wrap"><h1>Reliable vehicle recovery,<br>when you need it.</h1>
+<p class="lead">Fully insured, professional drivers. Clear pricing with no hidden fees.</p>
+<a class="btn" href="#">Request Recovery</a><a class="btn alt" href="#">See Pricing</a></div></section>
+<section><div class="wrap"><h2 style="text-align:center">Our Services</h2><div class="grid">
+<div class="card"><i>🚗</i><h3>Breakdown Recovery</h3><p>Taken to a garage or home.</p></div>
+<div class="card"><i>🛠️</i><h3>Roadside Assistance</h3><p>Quick fixes to get you going.</p></div>
+<div class="card"><i>🚚</i><h3>Car Transport</h3><p>Moving cars safely nationwide.</p></div>
+<div class="card"><i>🏁</i><h3>Auction & Dealer</h3><p>Trade collections and deliveries.</p></div></div></div></section>
+</div>
+
+<div class="site" id="c">
+<nav><b>🚛 Right Recovery</b><div class="links"><span>Help</span><span>Reviews</span><span>Call us</span></div></nav>
+<section><div class="wrap hero"><div><h1>Stuck? Don't worry, we've got you.</h1>
+<p style="margin-top:14px;font-size:18px">A friendly, family-run recovery service looking after drivers in your area.</p>
+<a class="btn" href="#">Give us a ring</a></div><div class="pic">🚗</div></div></section>
+<section><div class="wrap"><div class="grid">
+<div class="card"><h3>Breakdowns</h3><p>We'll come to you and take you somewhere safe.</p></div>
+<div class="card"><h3>Moving a car</h3><p>Bought a car? We'll bring it home.</p></div>
+<div class="card"><h3>Scrap & Removal</h3><p>Old car going? We'll collect it.</p></div></div>
+<blockquote style="margin-top:40px">"Came out at 2am and were so kind. Couldn't recommend more!" ⭐⭐⭐⭐⭐</blockquote></div></section>
+</div>
+
+<script>
+document.querySelectorAll('.picker button').forEach(b=>b.onclick=()=>{
+document.querySelectorAll('.picker button,.site').forEach(e=>e.classList.remove('on'));
+b.classList.add('on');document.getElementById(b.dataset.s).classList.add('on');scrollTo(0,0)});
+</script>
+</body>
+</html>
